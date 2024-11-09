@@ -1,0 +1,62 @@
+body {
+    margin: 0;
+    overflow: hidden;
+    background: linear-gradient(to top, #87CEEB, #A3D5D3); /* Himmel und Wasser */
+    font-family: 'Arial', sans-serif;
+}
+
+canvas {
+    display: block;
+    margin: 0 auto;
+    border: 2px solid #333; /* Rahmen um das Spiel */
+    border-radius: 10px; /* Abgerundete Ecken */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); /* Schatten */
+    animation: pulse 1.5s infinite; /* Pulsierende Animation */
+}
+
+@keyframes pulse {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+}
+
+.shop {
+    display: none;
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(255, 255, 255, 0.9);
+    border: 2px solid #333;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    animation: fadeIn 0.5s; /* Fade-In-Effekt */
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+button {
+    background: #4CAF50; /* Grüner Hintergrund */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background: #45a049; /* Dunklerer Grünton bei Hover */
+}
+
